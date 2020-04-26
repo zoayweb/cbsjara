@@ -20,6 +20,12 @@ body {
 .video-w3l {
   /* background: rgba(0, 0, 0, 0.46); */
   min-height: 90vh;
+  			background-image: url(https://www.hollows.org/Upload/FHF/Media/au/Images/C-BangladeshFamily.jpg) ;
+			background-position: center center;
+			background-repeat:  no-repeat;
+			background-attachment: fixed;
+			background-size:  cover;
+			background-color: #999;
 }
 
 a {
