@@ -31,19 +31,7 @@ body {
 	background-color: #999;
 } */
 
-element.style {
-    position: absolute;
-    z-index: -1;
-    top: 0px;
-    left: 0px;
-    bottom: 0px;
-    right: 0px;
-    overflow: hidden;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-image: url(https://www.hollows.org/Upload/FHF/Media/au/Images/C-BangladeshFamily.jpg);
-}
+
 a {
   -webkit-transition: .3s all ease;
   -o-transition: .3s all ease;
