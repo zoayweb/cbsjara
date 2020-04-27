@@ -17,20 +17,219 @@ body {
   color: #fff;
 }
 
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,700);
+
+/* Settings - feel free to play with these */
+/** * This part should be set separately for each video * if there are multiple videos in your site. * I.e. '.demo-video-wrapper' is the name of this particular video */
+.demo-video-wrapper {
+  background-image: url(../images/header-bg.png);
+}
+
+/* Video overlay and content */
+.video-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  pointer-events: none;
+  /* Allows right click menu on the video */
+  /* background: url('../images/header-bg.png') left top repeat; */
+  opacity: 0.3;
+}
+
+.video-hero {
+  min-height: 90vh;
+}
+
+.video-hero--content {
+  position: relative;
+  text-align: center;
+  color: #fff;
+  margin: 150px 0;
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+}
+
+.video-hero--content h2 {
+  font-size: 34px;
+  margin: 0 0 10px;
+}
+
+.video-hero--content p {
+  font-size: 20px;
+  margin: 0;
+}
+
+/* Other stuff */
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  line-height: 1.4;
+  color: #666;
+}
+
+a {
+  text-decoration: none;
+  color: #a46497;
+}
+
+.cf:before,
+.cf:after {
+  content: " ";
+  display: table;
+}
+
+.cf:after {
+  clear: both;
+}
+
+.page-width {
+  width: 92%;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+#header {
+  background: #2c2d33;
+  padding: 2em 0;
+}
+
+#header a {
+  color: #fff;
+}
+
+.title {
+  display: block;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.subtitle {
+  display: block;
+  font-weight: normal;
+  font-size: 15px;
+  color: #959699;
+}
+
+a:hover .subtitle {
+  color: #fff;
+}
+
+#site-title {
+  float: left;
+  margin: 0;
+}
+
+#content {
+  padding: 40px 0;
+}
+
+/* CSS from jQuery Background Video plugin */
+/** * Set default positioning as a fallback for if the plugin fails */
+.jquery-background-video-wrapper {
+  position: relative;
+  overflow: hidden;
+  background-position: center center;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+}
+
+.jquery-background-video {
+  position: absolute;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  top: 50%;
+  left: 50%;
+  -o-object-fit: contain;
+  object-fit: contain;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+/** * Fade in videos * Note the .js class - so non js users still * see the video */
+.js .jquery-background-video {
+  opacity: 0;
+  -webkit-transition: opacity 300ms linear;
+  transition: opacity 300ms linear;
+}
+
+.js .jquery-background-video.is-visible {
+  opacity: 1;
+}
+
+/** * Pause/play button */
+.jquery-background-video-pauseplay {
+  position: absolute;
+  background: transparent;
+  border: none;
+  box-shadow: none;
+  width: 20px;
+  height: 20px;
+  top: 15px;
+  right: 15px;
+  padding: 0;
+  cursor: pointer;
+  outline: none !important;
+}
+
+.jquery-background-video-pauseplay span {
+  display: none;
+}
+
+.jquery-background-video-pauseplay:after,
+.jquery-background-video-pauseplay:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.jquery-background-video-pauseplay.play:before {
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-left: 15px solid #fff;
+}
+
+.jquery-background-video-pauseplay.pause:before,
+.jquery-background-video-pauseplay.pause:after {
+  border-top: 10px solid #fff;
+  border-bottom: 10px solid #fff;
+  border-left: 5px solid #fff;
+}
+
+.jquery-background-video-pauseplay.pause:after {
+  left: 10px;
+}
+
+
 .video-w3l {
   /* background: rgba(0, 0, 0, 0.46); */
   min-height: 90vh;
 }
-/*
-#home-section {
-	background-image: url(https://www.hollows.org/Upload/FHF/Media/au/Images/C-BangladeshFamily.jpg) ;
-	background-position: center center;
-	background-repeat:  no-repeat;
-	background-attachment: fixed;
-	background-size:  cover;
-	background-color: #999;
-} */
 
+
+.org-name {
+  padding-top: 20px;
+  color: #fff;
+}
+
+@media (max-width:575px) {
+  .org-name {
+    padding-top: 0px;
+    font-size: 20px;
+    color: #3b3b3b;
+    padding-left: 26px;
+  }
+}
 
 a {
   -webkit-transition: .3s all ease;
@@ -350,12 +549,13 @@ h6 {
 .site-navbar .site-navigation .site-menu>li>a {
   padding: 10px 10px;
   color: #fff;
-  font-size: 18px;
+  font-size: 16.5px;
   text-decoration: none !important;
 }
 
 .site-navbar .site-navigation .site-menu>li>a.active {
   color: #29282899;
+  text-decoration: underline;
 }
 
 .site-navbar .site-navigation .site-menu>li>a:hover {
