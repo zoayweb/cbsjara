@@ -31,6 +31,8 @@
     rel="stylesheet" />
   <link href="//fonts.googleapis.com/css?family=Stylish&amp;subset=korean" rel="stylesheet" />
   <!-- //web-fonts -->
+  <script src="https://rawgit.com/BGStock/jquery-background-video/master/jquery.background-video.js"></script>
+
 </head>
 
 <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
@@ -52,7 +54,7 @@
             <div class="col-6">
               <!-- <a href="#" class="p-2 pl-0"><span class="icon-twitter"></span></a> -->
               <a href="https://www.facebook.com/cbsjara/" class="p-2 pl-0" target="_blank"><span class="icon-facebook">
-                  we're on facebook</span></a>
+                </span>we're on facebook</a>
               <!-- <a href="#" class="p-2 pl-0"><span class="icon-linkedin"></span></a> -->
               <!-- <a href="#" class="p-2 pl-0"><span class="icon-instagram"></span></a> -->
             </div>
@@ -79,6 +81,7 @@
               <h1 class="mt-3 site-logo">
                 <a href="index.html">
                   <img src="cbsjara.png" width="100" alt="" />
+
                 </a>
               </h1>
             </div>
@@ -89,7 +92,7 @@
                     <a href="#" class="site-menu-toggle js-menu-toggle text-white"><span
                         class="icon-menu h3"></span></a>
                   </div>
-
+                  <h3 class="org-name">Canada Bangladesh Social Justice Action Research Alliance</h3>
                   <ul class="site-menu main-menu js-clone-nav d-none d-lg-block">
                     <li>
                       <a href="#home-section" class="nav-link">Home</a>
@@ -102,9 +105,19 @@
                       <a href="#projects-section" class="nav-link">What we do</a>
                     </li>
                     <li>
+                      <a href="" class="nav-link">Podcast</a>
+                    </li>
+                    <li>
+                      <a href="" class="nav-link">Blog</a>
+                    </li>
+                    <li>
+                      <a href="" class="nav-link">Gallery</a>
+                    </li>
+                    <li>
                       <a href="#news-section" class="nav-link">Get involved</a>
                     </li>
                   </ul>
+
                 </div>
               </nav>
             </div>
@@ -113,7 +126,24 @@
       </div>
     </div>
 
-    <div class="video-w3l" data-vide-bg="cbsjara" id="home-section"></div>
+    <!-- <div class="video-w3l" data-vide-bg="cbsjara" id="home-section"></div> -->
+
+    <!-- Start video hero -->
+    <div class="video-hero jquery-background-video-wrapper demo-video-wrapper">
+      <video class="jquery-background-video" autoplay muted loop poster="images/header-bg.png">
+        <source src="cbsjara.mp4" type="video/mp4">
+      </video>
+      <div class="video-overlay"></div>
+      <div class="page-width">
+        <div class="video-hero--content">
+          <!-- <h2>Background Video Demo</h2>
+          <p>Full width video hero</p> -->
+        </div>
+      </div>
+    </div>
+    <!-- End video hero -->
+
+
 
     <div class="site-section about-section" id="about-section">
       <div class="container">
