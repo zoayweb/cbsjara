@@ -1,10 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@700;900&family=Fresca&display=swap');
+
+h2 {
+  font-family: 'Alegreya Sans',
+    sans-serif;
+  font-size: 3rem;
+}
+
+@media (max-width: 800px) {
+  #blog-section h3 {
+    font-size: 25px;
+  }
+}
+
 /* Base */
+.row-hero {
+
+  height: 20rem;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+@media(min-width: 480px) {
+  .row-hero {
+    height: 25rem;
+  }
+}
+
+@media(min-width: 720px) {
+  .row-hero {
+    height: 35rem;
+  }
+}
+
+.video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: auto;
+  width: auto;
+  z-index: -1;
+  transform: translateX(-50%) translateY(-50%);
+  min-width: 100%;
+  min-height: 100%;
+  opacity: .4;
+}
+
+.video-2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: auto;
+  width: auto;
+  z-index: -1;
+  transform: translateX(-50%) translateY(-50%);
+  min-width: 100%;
+  min-height: 100%;
+  background-image: url(../images/header-bg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
+  opacity: .4;
+}
+
+.video-quote {
+
+  top: 50%;
+  padding: .5rem 1rem;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+
+
+
 body {
   line-height: 1.7;
   color: gray;
   font-weight: 300;
   font-size: 1rem;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  /* font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; */
+  font-family: 'Fresca',
+    sans-serif;
+
 }
 
 ::-moz-selection {
@@ -39,7 +122,7 @@ body {
 }
 
 .video-hero {
-  min-height: 90vh;
+  min-height: 80vh;
 }
 
 .video-hero--content {
@@ -62,10 +145,18 @@ body {
 
 /* Other stuff */
 body {
-  font-family: 'Roboto', sans-serif;
-  font-size: 16px;
+  /* font-family: 'Roboto', sans-serif; */
+
+  font-family: 'Fresca',
+    sans-serif;
+  font-size: 20px;
   line-height: 1.4;
   color: #666;
+}
+
+.media-body h5 {
+  font-weight: bold;
+  font-size: larger;
 }
 
 a {
@@ -102,6 +193,8 @@ a {
   display: block;
   font-weight: bold;
   font-size: 18px;
+  font-family: 'Alegreya Sans', sans-serif;
+
 }
 
 .subtitle {
@@ -220,12 +313,19 @@ a:hover .subtitle {
 .org-name {
   padding-top: 20px;
   color: #fff;
+  font-size: 44px;
+  text-transform: capitalize;
+  font-family: 'Alegreya Sans',
+    sans-serif;
+  font-weight: 700;
+
 }
 
 @media (max-width:575px) {
   .org-name {
     padding-top: 0px;
     font-size: 20px;
+
     padding-left: 26px;
   }
 }
@@ -498,7 +598,10 @@ h6 {
 }
 
 .site-navbar-wrap a {
-  color: #fff;
+  /* color: rgb(119, 108, 108); */
+  font-weight: 400;
+  color: #222;
+  font-size: 16px;
 }
 
 .site-navbar-wrap .site-navbar-top {
@@ -522,10 +625,10 @@ h6 {
 }
 
 .site-navbar .site-logo a {
-  font-weight: 200;
+
   color: #fff;
   font-size: 20px;
-  font-weight: bold;
+
   text-transform: uppercase;
 }
 
@@ -547,18 +650,20 @@ h6 {
 
 .site-navbar .site-navigation .site-menu>li>a {
   padding: 10px 10px;
-  color: #fff;
-  font-size: 16.5px;
+  color: #232;
+  font-size: 19px;
   text-decoration: none !important;
+  text-transform: uppercase;
+  font-weight: 500;
 }
 
 .site-navbar .site-navigation .site-menu>li>a.active {
-  color: #29282899;
+  color: #fdb231;
   text-decoration: underline;
 }
 
 .site-navbar .site-navigation .site-menu>li>a:hover {
-  color: #29282899;
+  color: #f7aa26;
 }
 
 .site-navbar .site-navigation .site-menu>li:last-child {
@@ -860,7 +965,8 @@ h6 {
 
 .site-mobile-menu .site-nav-wrap>li>a {
   padding-left: 20px;
-  font-size: 20px;
+  font-size: 19px;
+  text-transform: uppercase;
 }
 
 .site-mobile-menu .site-nav-wrap>li>ul {
@@ -909,7 +1015,7 @@ h6 {
 }
 
 .sticky-wrapper.is-sticky .site-navbar {
-  background-color: #f8c56d;
+  background-color: #fff;
   -webkit-box-shadow: 4px 0 20px -5px rgba(0, 0, 0, 0.6);
   box-shadow: 4px 0 20px -5px rgba(0, 0, 0, 0.6);
 }
@@ -1368,9 +1474,11 @@ h6 {
 }
 
 .about-section h3 {
-  font-size: 30px;
-  font-weight: bold;
+  font-size: 47px;
   color: #000;
+  font-family: 'Alegreya Sans',
+    sans-serif;
+
 }
 
 .media.custom-media .icon {
