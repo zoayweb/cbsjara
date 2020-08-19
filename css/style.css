@@ -6,6 +6,28 @@ h2 {
   font-size: 3rem;
 }
 
+#team4 h3 {
+  font-family: 'Fresca',
+    sans-serif;
+  font-size: 2rem;
+}
+
+#team4 h4 {
+  font-family: 'Fresca',
+    sans-serif;
+  font-size: 1.3rem;
+}
+
+#team4 img {
+  height: 350px;
+}
+
+#team4 .displayed {
+  display: block;
+  margin-left: auto;
+  margin-right: auto
+}
+
 @media (max-width: 800px) {
   #blog-section h3 {
     font-size: 25px;
