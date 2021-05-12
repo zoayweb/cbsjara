@@ -142,7 +142,7 @@
     <!-- <div class="video-w3l" data-vide-bg="cbsjara" id="home-section"></div> -->
 
     <div class="row-hero">
-      <video class="video d-none d-md-inline-block" poster="images/header-bg.png" autoplay playsinline muted loop>
+      <video class="video-1 d-none d-md-inline-block" poster="images/header-bg.png" autoplay playsinline muted loop>
         <source src="cbsjara.mp4" type="video/mp4">
       </video>
       <img class="video-2 d-md-none"
@@ -153,8 +153,146 @@
       </div>
     </div>
 
+    <div class="popular-title">
+  <h1 class="popular-title_logo">Popular videos</h1>
+</div>
 
+       <style>
 
+/*.horizontal-slider-wrap,*/
+#video-slider{
+        width: 100%;
+        height: auto;
+        padding: 0;
+        overflow-y: visible;
+        overflow-x: auto;
+        position: relative; 
+         background-color: black;
+  padding: 5px;
+    }
+    
+    #video-slider .horizontal-slider{
+        -ms-box-orient: horizontal;
+        -ms-display: flex;
+        -webkit-display: flex;
+        display: -ms-flexbox;
+        display: -webkit-box;
+        display: flex;
+        display: flexbox;
+        flex-direction: row;
+        width: auto;
+        min-width: 100%;
+        height: auto;
+  
+    }
+    
+    .video-wrap {
+        /* min-width: 300px; */
+        min-width: 560px;
+        border: 10px solid black;
+        text-align: center;
+      
+    }
+#video-slider .video{
+  position: relative;
+  /* height: 0;
+  width: 100%; */
+  height: 315px;
+  width: 560px;
+  padding-bottom: 56%;
+  
+}
+#video-slider iframe{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  
+}
+ @media only screen and (max-width: 450px) {
+   .video-wrap {
+        min-width: 200px;
+}
+    #video-slider .video {
+      height: 0;
+      width: 100%;
+    }
+ }
+    </style>
+    <div id="video-slider">
+    <div class="horizontal-slider" >
+      <div class="video-wrap">
+        <div class="video">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/uySxoI859MM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+      </div>
+      <div class="video-wrap">
+        <div class="video">
+          <iframe src="https://www.youtube.com/embed/8rqkeyYdc04?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div>
+      </div>
+      <div class="video-wrap">
+        <div class="video">
+          <iframe src="https://www.youtube.com/embed/R_LKpRgnd5o?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </div> 
+      </div>
+        <div class="video-wrap">
+        <div class="video">
+          <iframe src="https://www.youtube.com/embed/-9_uYH6J59g?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </div> 
+      </div>
+      <div class="video-wrap">
+        <div class="video">
+          <iframe src="https://www.youtube.com/embed/z4J3fWGlQjc?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </div>
+      </div>
+      <div class="video-wrap">
+        <div class="video">
+          <iframe src="https://www.youtube.com/embed/ktwapHdj3F8?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </div>
+      </div>
+      <div class="video-wrap">
+        <div class="video">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/ewHXG0pQWLQ?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </div>
+      </div>
+      <div class="video-wrap">
+        <div class="video">
+      <iframe src="https://www.youtube.com/embed/wcpFumCWzWQ?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </div>
+  </div>
+      <div class="video-wrap">
+        <div class="video">
+      <iframe src="https://www.youtube.com/embed/ADcyWPG87bA?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+     </div>
+  </div>  
+   </div>
+  </div>
+
+  <br>
+  <style>
+    .flex-parent {
+  display: flex;
+}
+
+.jc-center {
+  justify-content: center;
+}
+
+.flex-parent .btn {
+  width: 150px;
+  height: 50px;
+  border-radius: 40px;
+}
+.flex-parent a {
+  padding-top: 10px;
+  font-size: 20px;
+}
+  </style>
+  <div class="flex-parent jc-center">
+  <a href="webinar.html" class="btn btn-danger" role="button">See more</a>
+</div>
 
     <div class="site-section about-section" id="about-section">
       <div class="container">
